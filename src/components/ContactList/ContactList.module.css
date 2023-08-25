@@ -1,0 +1,46 @@
+.list {
+  margin-bottom: 30px;
+}
+
+.item {
+  font-size: 18px;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.btnDelete {
+  background-color: transparent;
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid #c0c0c0;
+  color: #b1b1b1;
+  flex-grow: 1;
+  font-size: 16px;
+  height: 36px;
+  line-height: 20px;
+  max-width: 80px;
+  padding: 0 16px 0 16px;
+  cursor: pointer;
+
+  /* transform: translateX(-50px); */
+
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btnDelete:hover {
+  background-color: #818181;
+  color: #fff;
+}
+
+.contactInfo {
+  width: 150px;
+}

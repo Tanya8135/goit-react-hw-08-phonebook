@@ -1,0 +1,29 @@
+.navBox {
+  display: flex;
+  margin-bottom: 31px;
+  justify-content: flex-end;
+}
+
+.link {
+  display: block;
+  color: #b1b1b1;
+  padding: 8px 18px 10px 18px;
+  border-radius: 10px;
+
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    background-color: #adadad;
+    color: #fff;
+  }
+}
+
+.linkBox {
+  margin-right: 32px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

@@ -1,0 +1,22 @@
+.btnTheme {
+  background-color: #939191;
+  padding: 9px;
+  border-radius: 10px;
+
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    background-color: #818181;
+  }
+
+  &:active {
+    background-color: #454545;
+  }
+}
+
+.test {
+  display: flex;
+  justify-content: flex-end;
+}
