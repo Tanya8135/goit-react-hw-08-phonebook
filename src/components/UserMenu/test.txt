@@ -1,0 +1,45 @@
+// const styles = {
+//     container: {
+//         minHeight: 'calc(100vh - 300px)',
+//         display: 'flex',
+//         alignItems: 'center',
+//         justifyContent: 'center',
+//     },
+//     title: {
+//         fontWeight: 500,
+//         fontSize: 48,
+//         textAlign: 'center',
+//     }
+// };
+
+// import heroMob1 from '../img/hero-mob1_375.png'
+// import heroMob1x2 from '../img/hero-mob1@2_375.png'
+// // import heroMob2 from '../img/hero-mob2_375.png'
+// // import heroMob3 from '../img/hero-mob3_375.png'
+
+export default function Home() {
+    const importAllImages = (context) => {
+        let images = {}
+        context.keys().forEach((key) => {
+            images[key.replace('./', '')] = context(key)
+        })
+        return images
+    }
+
+    const images = importAllImages(require.context('../img/', false, /\.(png|jpe?g|svg)$/));
+
+    return (
+        <div className="swiper hero-img">
+            <ul className="swiper-wrapper hero-img-slider">
+                <li className="swiper-slide">
+                    <img
+                        srcSet={`${images['hero-mob1_375.png']} 375w, ${images['hero-mob1@2_375.png']} 750w`}
+                        sizes="(min-width: 375px) 375px, 100vh"
+                        src={images['hero-mob1@2_375.png']}
+                        alt="gray sofa and pouf"
+                    />
+                </li>
+            </ul>
+        </div>
+    );
+}
