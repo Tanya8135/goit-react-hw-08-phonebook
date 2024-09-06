@@ -106,18 +106,18 @@ input {
   color: #363636;
 }
 
-.darkTheme h1 {
+.darkTheme h1, h2 {
   color: #fff;
 }
 
-.lightTheme h1 {
+.lightTheme h1, h2 {
   color: #363636;
 }
 
-.darkTheme h2 {
+/* .darkTheme h2 {
   color: #fff;
-}
+} */
 
-.lightTheme h2 {
+/* .lightTheme h2 {
   color: #363636;
-}
+} */
